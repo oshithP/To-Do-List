@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(bgcopy.jpg);
+    background-size: cover; 
+    background-position: center center;
+    background-attachment:fixed;
+}
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: transparent;
+}
+.header .container{
+    height: 10vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.logo{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+.logo h1{
+    font-family:cursive;
+    font-size: 100 px;
+    text-decoration: solid;
+    font-weight: 800;
+    background-image: linear-gradient(to right, #254dbb, #f53aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+a{
+    text-decoration:solid;
+    color:rgb(190, 46, 195);
+}
+a:hover{
+    color: dodgerblue;
+}
+p{
+    font-size: larger;
+}
+li{
+    list-style:none;
+    font-size: 20px;
+}
+ul{
+    display: flex;
+    gap: 14px;
+    list-style: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+}
+.main{
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+}
+.main img{
+    display:block;
+    margin: auto;
+    width:70%;
+    position:fixed;
+    height: 90%;
+    filter: drop-shadow(20px 20px 40px rgba(0, 0, 0, 0.874));
+}
+.content{
+    padding-top: 30px;
+    padding-left: 360px;
+    display: block;
+    margin: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content .container{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    margin: auto;
+    height: 100%;
+}
+.todo{
+    cursor: pointer;
+    display: flex;
+    padding: 14px;
+}
+.todo_value{
+    
+    color: rgb(57, 57, 210);
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    flex-grow: 1;
+    border-bottom: 3px solid rgb(154, 153, 162);
+}
+.todo_checkbox{
+    cursor: pointer;
+}
+.todo:has(.todo_checkbox:checked){
+    color:rgb(100, 100, 100);
+    
+    text-decoration: line-through 1.5px;
+    order: 1;
+}
